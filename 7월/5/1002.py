@@ -2,12 +2,6 @@ import sys
 
 sys.stdin = open('input.txt')
 
-def if_same(x):
-    if x[0] == x[1]:
-        print(-1)
-    else:
-        print(0)
-
 N = int(input())
 for i in range(N):
     x1 , y1 , r1 , x2 , y2 , r2 = map(int , input().split())
@@ -19,9 +13,9 @@ for i in range(N):
         else:
             print(0)
     else:
-        if d > r1 + r2:
-            print(0)
+        if d < r1 + r2 and d > r:
+            print(2)
         elif d == r1 + r2 or d == r:
             print(1)
         else:
-            print(2)
+            print(0)
