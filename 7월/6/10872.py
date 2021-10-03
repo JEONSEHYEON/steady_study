@@ -2,6 +2,9 @@ import sys
 
 sys.stdin = open("input.txt")
 
+
+
+
 def factor(x):
     if x == 0:
         return 1
@@ -10,3 +13,8 @@ def factor(x):
 
 
 print(factor(int(input())))
+
+
+
+    
+

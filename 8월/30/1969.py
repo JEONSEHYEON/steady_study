@@ -8,6 +8,7 @@ N , M = map(int , input().split())
 dnas = [[] for _ in range(M)]
 ans = ''
 dist = 0
+
 for _ in range(N):
     dna = list(input())
     for i in range(M):
